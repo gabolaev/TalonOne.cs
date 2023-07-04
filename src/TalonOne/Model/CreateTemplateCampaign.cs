@@ -45,7 +45,7 @@ namespace TalonOne.Model
         /// <param name="campaignAttributesOverrides">Custom Campaign Attributes. If the Campaign Template defines the same values, they will be overridden..</param>
         /// <param name="templateParamValues">Actual values to replace the template placeholder values in the Ruleset bindings. Values for all Template Parameters must be provided..</param>
         /// <param name="limitOverrides">Limits for this Campaign. If the Campaign Template or Application define default values for the same limits, they will be overridden..</param>
-        /// <param name="campaignGroups">The IDs of the [campaign groups](https://docs.talon.one/docs/product/account/managing-campaign-groups) this campaign belongs to. .</param>
+        /// <param name="campaignGroups">The IDs of the [campaign groups](https://docs.talon.one/docs/product/account/account-settings/managing-campaign-groups/) this campaign belongs to. .</param>
         /// <param name="tags">A list of tags for the campaign. If the campaign template has tags, they will be overridden by this list..</param>
         public CreateTemplateCampaign(string name = default(string), string description = default(string), int templateId = default(int), Object campaignAttributesOverrides = default(Object), List<Binding> templateParamValues = default(List<Binding>), List<LimitConfig> limitOverrides = default(List<LimitConfig>), List<int> campaignGroups = default(List<int>), List<string> tags = default(List<string>))
         {
@@ -103,9 +103,9 @@ namespace TalonOne.Model
         public List<LimitConfig> LimitOverrides { get; set; }
 
         /// <summary>
-        /// The IDs of the [campaign groups](https://docs.talon.one/docs/product/account/managing-campaign-groups) this campaign belongs to. 
+        /// The IDs of the [campaign groups](https://docs.talon.one/docs/product/account/account-settings/managing-campaign-groups/) this campaign belongs to. 
         /// </summary>
-        /// <value>The IDs of the [campaign groups](https://docs.talon.one/docs/product/account/managing-campaign-groups) this campaign belongs to. </value>
+        /// <value>The IDs of the [campaign groups](https://docs.talon.one/docs/product/account/account-settings/managing-campaign-groups/) this campaign belongs to. </value>
         [DataMember(Name="campaignGroups", EmitDefaultValue=false)]
         public List<int> CampaignGroups { get; set; }
 

@@ -133,7 +133,7 @@ namespace TalonOne.Model
         /// <param name="couponSettings">couponSettings.</param>
         /// <param name="referralSettings">referralSettings.</param>
         /// <param name="limits">The set of [budget limits](https://docs.talon.one/docs/product/campaigns/settings/managing-campaign-budgets) for this campaign.  (required).</param>
-        /// <param name="campaignGroups">The IDs of the [campaign groups](https://docs.talon.one/docs/product/account/managing-campaign-groups) this campaign belongs to. .</param>
+        /// <param name="campaignGroups">The IDs of the [campaign groups](https://docs.talon.one/docs/product/account/account-settings/managing-campaign-groups/) this campaign belongs to. .</param>
         /// <param name="couponRedemptionCount">Number of coupons redeemed in the campaign..</param>
         /// <param name="referralRedemptionCount">Number of referral codes redeemed in the campaign..</param>
         /// <param name="discountCount">Total amount of discounts redeemed in the campaign..</param>
@@ -297,9 +297,9 @@ namespace TalonOne.Model
         public List<LimitConfig> Limits { get; set; }
 
         /// <summary>
-        /// The IDs of the [campaign groups](https://docs.talon.one/docs/product/account/managing-campaign-groups) this campaign belongs to. 
+        /// The IDs of the [campaign groups](https://docs.talon.one/docs/product/account/account-settings/managing-campaign-groups/) this campaign belongs to. 
         /// </summary>
-        /// <value>The IDs of the [campaign groups](https://docs.talon.one/docs/product/account/managing-campaign-groups) this campaign belongs to. </value>
+        /// <value>The IDs of the [campaign groups](https://docs.talon.one/docs/product/account/account-settings/managing-campaign-groups/) this campaign belongs to. </value>
         [DataMember(Name="campaignGroups", EmitDefaultValue=false)]
         public List<int> CampaignGroups { get; set; }
 

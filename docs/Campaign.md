@@ -19,7 +19,7 @@ Name | Type | Description | Notes
 **CouponSettings** | [**CodeGeneratorSettings**](CodeGeneratorSettings.md) |  | [optional] 
 **ReferralSettings** | [**CodeGeneratorSettings**](CodeGeneratorSettings.md) |  | [optional] 
 **Limits** | [**List&lt;LimitConfig&gt;**](LimitConfig.md) | The set of [budget limits](https://docs.talon.one/docs/product/campaigns/settings/managing-campaign-budgets) for this campaign.  | 
-**CampaignGroups** | **List&lt;int&gt;** | The IDs of the [campaign groups](https://docs.talon.one/docs/product/account/managing-campaign-groups) this campaign belongs to.  | [optional] 
+**CampaignGroups** | **List&lt;int&gt;** | The IDs of the [campaign groups](https://docs.talon.one/docs/product/account/account-settings/managing-campaign-groups/) this campaign belongs to.  | [optional] 
 **CouponRedemptionCount** | **int** | Number of coupons redeemed in the campaign. | [optional] 
 **ReferralRedemptionCount** | **int** | Number of referral codes redeemed in the campaign. | [optional] 
 **DiscountCount** | **decimal** | Total amount of discounts redeemed in the campaign. | [optional] 
